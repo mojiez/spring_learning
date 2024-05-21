@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--这就是spring的配置文件-->
+    <!--IDEA提供了这个类的创建模版，一定要用这个模版来创建    -->
+    <!--这个文件名不一定叫spring.xml 可以是其他名字   -->
+    <!--最好放在类路径中 方便后期的移植    -->
+    <!--放在resources根目录下，相当于是放到了类的根路径下    -->
+
+    <!--配置bean，这样spring才可以帮助我们管理这个对象   -->
+    <!--id bean的身份证号 唯一标识 不能重复   -->
+    <!--class 带包名的类名 类的全路径  -->
+    <bean id="userBean" class="com.atyichen.bean.User"/>
+</beans>
