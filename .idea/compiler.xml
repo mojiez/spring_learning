@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring6-001-revelation" />
         <module name="spring6-002-first" />
+        <module name="spring6-003-di" />
       </profile>
     </annotationProcessing>
   </component>

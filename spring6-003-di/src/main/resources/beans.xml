@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="userDaoBean" class="com.atyichen.project.dao.UserDao"/>
+    <bean id="vipDaoBean" class="com.atyichen.project.dao.VipDao"/>
+    <bean id="csBean" class="com.atyichen.project.service.CustomerService">
+<!--        构造注入-->
+<!--        指定构造方法的第一个参数-->
+        <constructor-arg index="0" ref="userDaoBean"/>
+
+        <constructor-arg index="1" ref="vipDaoBean"/>
+    </bean>
+</beans>

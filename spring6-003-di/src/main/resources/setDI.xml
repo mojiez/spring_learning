@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    定义bean-->
+    <bean id="orderDaoBean" class="com.atyichen.project.dao.OrderDao"></bean>
+    <bean id="orderServiceBean" class="com.atyichen.project.service.OrderService">
+<!--        注入外部bean-->
+<!--        使用ref引入 就是注入外部bean-->
+        <property name="orderDao" ref="orderDaoBean"/>
+    </bean>
+
+    <bean id="orderServiceBean2" class="com.atyichen.project.service.OrderService">
+<!--        指定set方法-->
+        <property name="orderDao">
+<!--            指定set方法的参数 （要注入的对象） 这就是内部bean-->
+            <bean class="com.atyichen.project.dao.OrderDao"/>
+        </property>
+    </bean>
+
+<!--    注入简单类型(基本类型)-->
+    <bean id="userBean" class="com.atyichen.project.bean.User">
+<!--        重点 如果是给简单类型赋值，就不能使用ref了，就需要使用value-->
+<!--        name是 指定set方法-->
+<!--        value是 指定set方法中要传的参数-->
+        <property name="username" value="zhangsan"/>
+        <property name="age" value="18"/>
+        <property name="password" value="12345678"/>
+    </bean>
+</beans>
