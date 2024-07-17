@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean class="com.atyichen.testmyspring.Vip" id="vip">
+        <property name="age" value="20"/>
+        <property name="name" value="drinker"/>
+        <property name="height" value="1.88"/>
+    </bean>
+    <bean class="com.atyichen.testmyspring.OrderDao" id="orderDao"></bean>
+    <bean class="com.atyichen.testmyspring.OrderService" id="orderService">
+        <property name="orderDao" ref="orderDao"/>
+    </bean>
+</beans>

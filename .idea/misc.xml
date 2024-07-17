@@ -7,6 +7,12 @@
         <option value="$PROJECT_DIR$/spring6-001-revelation/pom.xml" />
         <option value="$PROJECT_DIR$/spring6-002-first/pom.xml" />
         <option value="$PROJECT_DIR$/spring6-003-di/pom.xml" />
+        <option value="$PROJECT_DIR$/spring6-004-scope/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-005-bean-init/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-006-bean-lifecycle/pom.xml" />
+        <option value="$PROJECT_DIR$/reflec/pom.xml" />
+        <option value="$PROJECT_DIR$/my-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/myspring-test/pom.xml" />
       </list>
     </option>
   </component>
